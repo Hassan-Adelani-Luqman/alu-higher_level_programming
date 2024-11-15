@@ -1,5 +1,4 @@
--- A script that creates the table force_name on your MySQL server
--- Query to create a table 
-CREATE TABLE IF NOT EXISTS force_name (
-       id INT,
-       name VARCHAR(256) NOT NULL);
+-- Create database then create user then grant user select privilage on that database
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+CREATE USER IF NOT EXISTS user_0d_2@localhost IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT ON hbtn_0d_2.* TO user_0d_2@localhost;
