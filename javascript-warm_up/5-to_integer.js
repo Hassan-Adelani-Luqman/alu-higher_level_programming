@@ -1,4 +1,4 @@
-i#!/usr/bin/node
+#!/usr/bin/node
 const myArgs = process.argv.slice(2);
 const num = Number(myArgs[0]);
 if (isNaN(num)) {
